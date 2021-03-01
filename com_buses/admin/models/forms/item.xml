@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<form>
+
+    <fieldset name="details" label="COM_BUSES_ITEM_DETAILS">
+
+        <field name="id" type="hidden" />
+
+        <field
+                name="published"
+                type="list"
+                label="JSTATUS"
+                description="JFIELD_PUBLISHED_DESC"
+                class="chzn-color-state"
+                filter="intval"
+                size="1"
+                default="1">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+
+        <field
+                name="language"
+                type="language"
+                default=""
+                label="JFIELD_LANGUAGE_LABEL"
+                description="COM_CATEGORIES_FIELD_LANGUAGE_DESC"
+                required="required"
+                class="span3" >
+            <option>   </option>
+        </field>
+
+        <field
+                type="spacer"
+                hr="true" />
+
+        <field
+                name="brand"
+                type="text"
+                label="COM_BUSES_ITEM_BRAND_LABEL"
+                description="COM_BUSES_ITEM_BRAND_DESC"
+                size="40"
+                class="inputbox"
+                required="true"
+                default=""
+        />
+
+        <field
+                name="model"
+                type="text"
+                label="COM_BUSES_ITEM_MODEL_LABEL"
+                description="COM_BUSES_ITEM_MODEL_DESC"
+                size="40"
+                class="inputbox"
+                required="true"
+                default=""/>
+
+        <field
+                name="alias"
+                type="text"
+                default=""
+                label="COM_BUSES_ITEM_ALIAS"
+                description="COM_BUSES_ITEM_ALIAS_DESCRIPTION" />
+
+        <fields name="images">
+
+            <field
+                    name="image1"
+                    type="media"
+                    label="COM_BUSES_ITEM_IMG"
+                    description="COM_BUSES_ITEM_IMG_DESCRIPTION" />
+
+        </fields>
+
+        <field
+                type="spacer"
+                hr="true" />
+
+        <field
+                type="note"
+                label="COM_BUSES_ITEM_SERVICE" />
+
+        <field
+                name="wifi"
+                type="radio"
+                default="0"
+                class="btn-group btn-group-yesno"
+                label="COM_BUSES_WIFI"
+                description="COM_BUSES_WIFI_DESC">
+            <option value="1">COM_BUSES_YES</option>
+            <option value="0">COM_BUSES_NO</option>
+        </field>
+
+        <field
+                name="tv"
+                type="radio"
+                default="0"
+                class="btn-group btn-group-yesno"
+                label="COM_BUSES_TV"
+                description="COM_BUSES_TV_DESC">
+            <option value="1">COM_BUSES_YES</option>
+            <option value="0">COM_BUSES_NO</option>
+        </field>
+
+        <field
+                name="music"
+                type="radio"
+                default="0"
+                class="btn-group btn-group-yesno"
+                label="COM_BUSES_MUSIC"
+                description="COM_BUSES_MUSIC_DESC">
+            <option value="1">COM_BUSES_YES</option>
+            <option value="0">COM_BUSES_NO</option>
+        </field>
+
+        <field
+                name="wc"
+                type="radio"
+                default="0"
+                class="btn-group btn-group-yesno"
+                label="COM_BUSES_WC"
+                description="COM_BUSES_WC_DESC">
+            <option value="1">COM_BUSES_YES</option>
+            <option value="0">COM_BUSES_NO</option>
+        </field>
+
+        <field
+                name="climat"
+                type="radio"
+                default="0"
+                class="btn-group btn-group-yesno"
+                label="COM_BUSES_CLIMAT"
+                description="COM_BUSES_CLIMAT_DESC">
+            <option value="1">COM_BUSES_YES</option>
+            <option value="0">COM_BUSES_NO</option>
+        </field>
+
+        <field
+                name="comfort"
+                type="radio"
+                default="0"
+                class="btn-group btn-group-yesno"
+                label="COM_BUSES_COMFORT"
+                description="COM_BUSES_COMFORT_DESC">
+            <option value="1">COM_BUSES_YES</option>
+            <option value="0">COM_BUSES_NO</option>
+        </field>
+
+        <field
+                name="usb"
+                type="radio"
+                default="0"
+                class="btn-group btn-group-yesno"
+                label="COM_BUSES_USB"
+                description="COM_BUSES_USB_DESC">
+            <option value="1">COM_BUSES_YES</option>
+            <option value="0">COM_BUSES_NO</option>
+        </field>
+
+        <field
+                name="food"
+                type="radio"
+                default="0"
+                class="btn-group btn-group-yesno"
+                label="COM_BUSES_FOOD"
+                description="COM_BUSES_FOOD_DESC">
+            <option value="1">COM_BUSES_YES</option>
+            <option value="0">COM_BUSES_NO</option>
+        </field>
+
+        <field
+                type="spacer"
+                hr="true" />
+
+        <field
+                name="description"
+                type="editor"
+                filter="JComponentHelper::filterText"
+                label="COM_BUSES_ITEM_TEXT"
+                description="COM_BUSES_ITEM_DESCRIPTION"
+                buttons="true" />
+
+    </fieldset>
+
+    <field
+            type="spacer"
+            hr="true" />
+
+</form>

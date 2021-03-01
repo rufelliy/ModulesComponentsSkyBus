@@ -1,0 +1,273 @@
+.buses_info, .news_info {
+    position: relative;
+    color: #FFFFFF;
+    height: 165px;
+    padding: 30px 30px 30px 30px;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    background-image: url(/images/sub_navbar_route.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.our_bus, .our_news {
+    width: 200px;
+    margin-left: 10%;
+    margin-right: auto;
+}
+.buses_info .icon_our_bus {
+    margin-left: 25px;
+    margin-top: 25px;
+    background-image: url(/images/sprites.png);
+    background-position: -200px -50px;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.news_info .icon_news {
+    margin-left: 25px;
+    margin-top: 25px;
+    background-image: url(/images/news_icon.png);
+    width: 36px;
+    height: 40px;
+}
+.buses_info .our_bus p, .news_info .our_news p {
+    float: left;
+    color: #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: -38px;
+    padding-top: 0px;
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.news_info .our_news p {
+    margin-top: -31px;
+}
+/*About_buses*/
+.bus_container {
+    position: relative;
+    margin-top: 30px;
+    background-color: #8bc4f2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 550px;
+}
+.buscont:last-child {
+    margin-bottom: 50px;
+}
+.title_bus {
+    width: 100%;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.bus_descr {
+    margin-top: 185px;
+    margin-left: 40px;
+    margin-right: 60px;
+}
+.title_bus h3 {
+    text-align: left;
+    color: #6d4f75;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.title_bus h5 {
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 14px;
+}
+.bus_descr p {
+    text-align: left;
+    line-height: 2;
+    padding-bottom: 70px;
+    color: #6d4f75;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 12px;
+    overflow: hidden;
+}
+.bus_container .gallery_but {
+   position: absolute;
+    bottom: 55px;
+    right: 60px;
+}
+.bus_container .gallery_but a {
+    border: 1px solid #FFFFFF;
+    margin-top: -15px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 30px;
+    color: #FFFFFF;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.bus_container .gallery_but a:hover, .bus_descr a:focus {
+    border: 1px solid #413e64;
+    background-color: #413e64;
+    text-decoration: none;
+}
+.bus_container .bus_icons {
+    display: inline-block;
+    margin-top: 60px;
+    margin-left: 30px;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-left: 1px solid #ffffff;
+}
+.bus_container .interval, .date, .daily {
+    width: 120px;
+    margin-top: 20px;
+}
+.bus_container .climat_icon {
+    float: left;
+    margin-left: 10px;
+    background-image: url(/images/climat.png);
+    width: 20px;
+    height: 20px;
+}
+.bus_container .comfort_icon {
+    float: left;
+    margin-left: 10px;
+    margin-top: 2px;
+    background-image: url(/images/comfort.png);
+    width: 20px;
+    height: 18px;
+}
+.bus_container .food_icon {
+    float: left;
+    margin-left: 10px;
+    background-image: url(/images/food.png);
+    width: 18px;
+    height: 20px;
+}
+.bus_container .music_icon {
+    float: left;
+    margin-left: 10px;
+    background-image: url(/images/music.png);
+    width: 18px;
+    height: 19px;
+}
+.bus_container .tv_icon {
+    float: left;
+    margin-left: 10px;
+    background-image: url(/images/tv.png);
+    width: 22px;
+    height: 20px;
+}
+.bus_container .usb_icon {
+    float: left;
+    margin-left: 10px;
+    background-image: url(/images/usb.png);
+    width: 15px;
+    height: 21px;
+}
+.bus_container .wc_icon {
+    float: left;
+    margin-left: 10px;
+    background-image: url(/images/wc.png);
+    width: 17px;
+    height: 20px;
+}
+.bus_container .wifi_icon {
+    float: left;
+    margin-left: 10px;
+    margin-top: 4px;
+    background-image: url(/images/wifi.png);
+    width: 22px;
+    height: 15px;
+}
+.bus_container .feel_icon {
+    float: left;
+    margin-left: 210px;
+    width: 22px;
+    height: 15px;
+}
+.bus_container .interval_icon {
+    background-image: url(/images/sprites.png);
+    background-position: 0px -50px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.bus_container .date_icon {
+    background-image: url(/images/sprites.png);
+    background-position: -50px -50px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.bus_container .daily_icon {
+    background-image: url(/images/sprites.png);
+    background-position: -100px -50px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.bus_container .interval p, .date p, .daily p {
+    margin-top: -30px;
+    margin-left: 35px;
+    color: #8bc4f2;
+    font-weight: 500;
+    font-size: 12px;
+    font-style: normal;
+}
+.buses .img_buses_container {
+}
+.bus_container #img_buses {
+    margin-left: -15px;
+    margin-right: -15px;
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#img_buses {
+    background-image: url(/images/bus_01.jpg);
+}
+
+#img_buses .search {
+    display: none;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-left: 48%;
+    margin-top: 250px;
+    background-image: url(/images/zoom.png);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    transform: scale(0.5);
+    transition: all 1s;
+}
+#img_buses .search.animate {
+    transform: scale(1);
+}
+#img_buses:hover .search {
+    display: block;
+}
+#img_buses:before {
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+#img_buses:hover:before {
+    background: rgba(0,0,0,0.5);
+}
+

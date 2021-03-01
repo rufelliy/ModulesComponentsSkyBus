@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="update">
+
+    <name>MOD_GALLERY</name>
+    <author>Joomla Module</author>
+    <creationDate>April 2018</creationDate>
+    <copyright>Copyright (C) Rufus</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <authorEmail>rufelliy@i.ua</authorEmail>
+    <authorUrl>www.joomla.org</authorUrl>
+    <version>3.0.0</version>
+    <description></description>
+
+    <files>
+
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>forms</folder>
+        <folder>fields</folder>
+        <folder>language</folder>
+        <folder>tmpl</folder>
+
+        <filename module="mod_gallery">mod_gallery.php</filename>
+        <filename>mod_gallery.xml</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+
+    </files>
+
+    <config>
+
+        <fields name="params">
+
+            <fieldset name="basic">
+
+                <field name="addGallery" type="subform"
+                       formsource="modules/mod_gallery/forms/newgallery.xml" multiple="true"
+                       label="MOD_GALLERY_ADD" description="MOD_GALLERY_ADD_DESC" />
+
+            </fieldset>
+
+            <fieldset name="advanced">
+                <field name="moduleclass_sfx" type="text" default="" label="MOD_GALLERY_ADD_CLASS"
+                       description="MOD_GALLERY_ADD_CLASS_DESC" />
+            </fieldset>
+
+        </fields>
+
+    </config>
+</extension>

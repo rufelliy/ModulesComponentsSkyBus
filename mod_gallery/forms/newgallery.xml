@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+
+    <field
+            name="number"
+            type="numb"
+            addfieldpath="/modules/mod_gallery/fields"
+            default=""
+            label=""
+            description=""
+            size="20" />
+
+    <field
+            name="folder"
+            type="folderlist"
+            default=""
+            directory="images/gallery"
+            filter=""
+            exclude=""
+            stripext=""
+            hide_default="true"
+            hide_none="false"
+            label="MOD_GALLERY_FOLDER"
+            description="MOD_GALLERY_FOLDER_DESC" size="20" />
+
+    <field
+            name="titleua"
+            type="text"
+            default=""
+            label="MOD_GALLERY_TITLEUA"
+            description="MOD_GALLERY_TITLEUA_DESC"
+            size="40" />
+
+    <field
+            name="titleru"
+            type="text"
+            default=""
+            label="MOD_GALLERY_TITLERU"
+            description="MOD_GALLERY_TITLERU_DESC"
+            size="40" />
+
+    <field
+            name="titleen"
+            type="text"
+            default=""
+            label="MOD_GALLERY_TITLEEN"
+            description="MOD_GALLERY_TITLEEN_DESC"
+            size="40" />
+
+    <field
+            name="date"
+            type="calendar"
+            default=""
+            label="MOD_GALLERY_DATE"
+            description="MOD_GALLERY_DATE_DESC"
+            format="%Y-%m-%d %H:%M:%S"
+            size="22" />
+
+    <field
+            type="spacer"
+            hr="true" />
+
+</form>

@@ -1,0 +1,215 @@
+/*==========  Desktop First Method  ==========*/
+
+@media only screen and (max-width : 1920px) {
+
+}
+
+@media only screen and (max-width : 1760px) {
+
+}
+
+@media only screen and (max-width : 1600px) {
+
+}
+
+@media only screen and (max-width : 1440px) {
+}
+
+
+@media only screen and (max-width : 1300px) {
+
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 1024px) {
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+
+    /*Автобуси на сторінці автобусів*/
+    .buses_info .our_buses {
+        margin-left: 30%;
+    }
+    .bus_container {
+        height: auto;
+    }
+    .title_bus {
+        margin-top: 60px;
+    }
+    .bus_icons {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .bus_descr {
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 20px;
+    }
+    .bus_container .gallery_but {
+        right: 35px;
+    }
+    .rout {
+        max-width: 100%;
+        height: -webkit-fill-available;
+        float: none;
+    }
+    .bus_container .bus_icons {
+        margin-top: 40px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 700px) {
+
+}
+
+@media only screen and (max-width : 660px) {
+
+    /*Автобуси на сторінці автобусів*/
+    .buses_info .our_buses {
+        margin-left: 25%;
+    }
+}
+@media only screen and (max-width : 600px) {
+    .timetable .tabletime {
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width : 560px) {
+
+}
+
+
+@media only screen and (max-width : 540px) {
+
+}
+
+
+@media only screen and (max-width : 510px) {
+
+    /*Автобуси на сторінці автобусів*/
+    .buses_info .our_buses {
+        margin-left: 20%;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+
+@media only screen and (max-width : 465px) {
+
+}
+
+
+@media only screen and (max-width : 460px) {
+
+}
+
+@media only screen and (max-width : 454px) {
+}
+
+@media only screen and (max-width : 446px) {
+
+}
+
+@media only screen and (max-width : 436px) {
+
+}
+
+@media only screen and (max-width : 435px) {
+
+}
+
+
+@media only screen and (max-width : 400px) {
+
+}
+
+
+@media only screen and (max-width : 400px) {
+
+}
+
+
+@media only screen and (max-width : 340px) {
+
+}
+
+@media only screen and (max-width : 375px) {
+    /*Автобуси на сторінці автобусів*/
+    .buses_info .our_buses {
+        margin-left: -1%;
+    }
+}
+
+@media only screen and (max-width : 352px) {
+
+}
+
+@media only screen and (max-width : 346px) {
+
+    /*Автобуси на сторінці автобусів*/
+    .buses_info .our_buses {
+        margin-left: -18%;
+    }
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+    /*Автобуси на сторінці автобусів*/
+    .buses_info .our_buses {
+        margin-left: -11%;
+    }
+}
+
+
+@media only screen and (max-width : 300px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

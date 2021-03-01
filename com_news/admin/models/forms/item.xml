@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<form>
+
+    <fieldset name="details" label="COM_NEWS_ITEM_DETAILS">
+
+        <field name="id" type="hidden" />
+
+        <field
+                name="published"
+                type="list"
+                label="JSTATUS"
+                description="JFIELD_PUBLISHED_DESC"
+                class="chzn-color-state"
+                filter="intval"
+                size="1"
+                default="1">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+
+        <field
+                name="language"
+                type="language"
+                default=""
+                label="JFIELD_LANGUAGE_LABEL"
+                description="COM_CATEGORIES_FIELD_LANGUAGE_DESC"
+                required="required"
+                class="span3" >
+            <option>   </option>
+        </field>
+
+        <field
+                type="spacer"
+                hr="true" />
+
+        <field
+                name="title"
+                type="text"
+                label="COM_NEWS_ITEM_TITLE_LABEL"
+                description="COM_NEWS_ITEM_TITLE_DESC"
+                class="input-xxlarge"
+                required="true"
+                default=""
+        />
+
+        <field
+                name="alias"
+                type="text"
+                default="" label="COM_NEWS_ITEM_ALIAS"
+                description="COM_NEWS_ITEM_ALIAS_DESCRIPTION" />
+
+        <fields name="images">
+
+            <field
+                    name="image1"
+                    type="media"
+                    label="COM_NEWS_ITEM_IMG"
+                    description="COM_NEWS_ITEM_IMG_DESCRIPTION" />
+
+        </fields>
+
+        <field
+                name="publish_up"
+                type="calendar"
+                label="COM_NEWS_PUBLISH_UP_LABEL"
+                description="COM_NEWS_PUBLISH_UP_DESC"
+                format="%Y-%m-%d %H:%M:%S"
+                size="22" />
+
+        <field
+                type="spacer"
+                hr="true" />
+
+        <field
+                name="text"
+                type="editor"
+                filter="JComponentHelper::filterText"
+                label="COM_NEWS_ITEM_TEXT"
+                description="COM_NEWS_ITEM_TEXT_DESCRIPTION"
+                buttons="true" />
+
+    </fieldset>
+
+</form>

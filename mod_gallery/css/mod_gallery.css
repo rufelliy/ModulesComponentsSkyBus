@@ -1,0 +1,152 @@
+/*******************************************/
+/*********Галерея***************************/
+/*******************************************/
+
+.gallery_div {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px 0px 20px 0px;
+    /*margin-bottom: 50px;*/
+}
+.gallery_wrap:last-child {
+    margin-bottom: 50px;
+}
+.gallery_wrap {
+    width: auto;
+    height: auto;
+    /*margin-top: 50px;*/
+}
+.gallery_wrap h3 {
+    text-align: left;
+    color: #413e64;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 30px;
+}
+.gallery_wrap .date {
+    float: right;
+    text-align: right;
+    margin-top: -45px;
+    margin-right: 10px;
+	margin-bottom: 0px;
+    width: 150px;
+    color: #50499c;
+    font-weight: 800;
+    font-size: 14px;
+}
+/*Фото одинакового розміру*/
+.mosaicflow__item img {
+    /*filter: none;
+    -webkit-filter: grayscale(0);*/
+    border-radius:5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding:5px;
+}
+.mosaicflow__item img:hover {
+   /* -webkit-filter: contrast(100%) brightness(70%);*/
+}
+.mosaicflow__item {
+    padding:5px;
+}
+.mosaicflow__item a {
+    display: block;
+    position: relative;
+    border-radius:5px;
+}
+
+.mosaicflow__item a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.mosaicflow__item a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*background: url(icon-path);*/
+    opacity: 0;
+}
+
+.mosaicflow__item a:hover:before,
+.mosaicflow__item a:hover:after {
+    opacity: 1;
+}
+
+.gallery_info {
+    position: relative;
+    color: #FFFFFF;
+    height: 165px;
+    padding: 30px 30px 30px 30px;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    background-image: url(/images/gallery.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.our_gallery {
+    width: 200px;
+    margin-left: 10%;
+    margin-right: auto;
+}
+
+.gallery_info .icon_our_gallery {
+    margin-left: 25px;
+    margin-top: 25px;
+    background-image: url(/images/gallery.png);
+    width: 50px;
+    height: 50px;
+}
+.gallery_info .our_gallery p {
+    float: left;
+    color: #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: -38px;
+    padding-top: 0px;
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.mosaicflow__item {
+    padding:3px;
+}
+.mosaicflow__column {
+    float:left;
+}
+.mosaicflow__item img {
+    display:block;
+    width:100%;
+    height:auto;
+    padding: 4px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+/*.mosaicflow__item img:hover {*/
+    /*opacity: 0.6;*/
+    /*filter: alpha(opacity=60);*/
+/*}*/

@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<form>
+
+    <fieldset name="basic" label="COM_ROUTES_ITEM_DETAILS">
+
+        <field name="published"
+               type="list"
+               label="JSTATUS"
+               description="JFIELD_PUBLISHED_DESC"
+               class="chzn-color-state"
+               filter="intval"
+               size="1"
+               default="1">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+
+        <field
+                name="language"
+                type="language"
+                default=""
+                label="JFIELD_LANGUAGE_LABEL"
+                description="COM_CATEGORIES_FIELD_LANGUAGE_DESC"
+                required="required"
+                class="span3" >
+            <option>   </option>
+        </field>
+
+        <field
+                type="spacer"
+                hr="true" />
+
+        <field name="title"
+                type="text"
+                label="COM_ROUTES_ITEM_TITLE_LABEL"
+                description="COM_ROUTES_ITEM_TITLE_DESC"
+				class="input-xlarge"
+                size="40"
+                required="true"
+                default=""
+                />
+
+        <field name="alias"
+               type="text"
+               default=""
+			   required="true"
+               label="COM_ROUTES_ITEM_ALIAS"
+               description="COM_ROUTES_ITEM_ALIAS_DESCRIPTION" />
+
+        <field
+                type="spacer"
+                hr="true" />
+
+        <field name="start_point_name"
+               type="text"
+			   class="input-xxlarge"
+			   label="COM_ROUTES_START_POINT_NAME"
+               description="COM_ROUTES_START_POINT_NAME_DESCRIPTION" />
+
+        <field name="finish_point_name"
+               type="text"
+			   class="input-xxlarge"
+			   label="COM_ROUTES_FINISH_POINT_NAME"
+               description="COM_ROUTES_FINISH_POINT_NAME_DESCRIPTION" />
+
+        <field
+                type="spacer"
+                hr="true" />
+
+        <field name="interval"
+               type="text"
+			   class="input-xlarge"
+               label="COM_ROUTES_INTERVAL"
+               description="COM_ROUTES_INTERVAL_DESCRIPTION" />
+
+        <field name="days"
+               type="text"
+			   class="input-xlarge"
+               label="COM_ROUTES_DAYS"
+               description="COM_ROUTES_DAYS_DESCRIPTION" />
+
+        <field name="time"
+               type="text"
+			   class="input-xlarge"
+               label="COM_ROUTES_TIME"
+               description="COM_ROUTES_TIME_DESCRIPTION" />
+
+        <field
+                type="spacer"
+                hr="true" />
+
+        <field name="description"
+               type="editor"
+               filter="JComponentHelper::filterText"
+               label="COM_ROUTES_ITEM_TEXT"
+               description="COM_ROUTES_ITEM_DESCRIPTION"
+               buttons="true" />
+
+        <field
+                type="spacer"
+                hr="true" />
+
+        <field name="backgound_color"
+               type="radio"
+               default="0"
+               class="btn-group btn-group-yesno"
+               label="COM_ROUTES_BCKGROUNDCOLOR"
+               description="COM_ROUTES_BCKGROUNDCOLOR_DESC">
+            <option value="1">COM_ROUTES_YES</option>
+            <option value="0">COM_ROUTES_NO</option>
+        </field>
+
+        <field
+                type="spacer"
+                hr="true" />
+
+        <field name="but_tickets"
+               type="radio"
+               default="0"
+               class="btn-group btn-group-yesno"
+               label="COM_ROUTES_TICKETS"
+               description="COM_ROUTES_TICKETS_DESC">
+            <option value="1">COM_ROUTES_YES</option>
+            <option value="0">COM_ROUTES_NO</option>
+        </field>
+
+        <field name="but_memorandum"
+               type="radio"
+               default="0"
+               class="btn-group btn-group-yesno"
+               label="COM_ROUTES_MEMORANDUM"
+               description="COM_ROUTES_MEMORANDUM_DESC">
+            <option value="1">COM_ROUTES_YES</option>
+            <option value="0">COM_ROUTES_NO</option>
+        </field>
+
+        <field name="memorandum_desc"
+               type="editor"
+               filter="JComponentHelper::filterText"
+               label="COM_ROUTES_MEMORANDUM_TEXT"
+               description="COM_ROUTES_MEMORANDUM_DESCRIPTION"
+               buttons="true" />
+
+        <field
+                type="spacer"
+                hr="true" />
+
+    </fieldset>
+
+    <fieldset name="map" label="COM_ROUTES_ITEM_MAP" description="COM_ROUTES_ITEM_MAP_DESC">
+
+        <field name="apikey"
+               type="text"
+			   class="input-xlarge"
+               label="COM_ROUTES_API"
+               description="COM_ROUTES_API_DESC" />
+
+        <field
+                type="spacer"
+                hr="true" />
+
+        <field name="speed"
+               type="rang"
+               label="COM_ROUTES_SPEED_ANIMATE"
+               description="COM_ROUTES_SPEED_ANIMATE_DESC" />
+
+        <field
+                type="spacer"
+                hr="true" />
+
+        <field name="start_point"
+               type="text"
+			   class="input-xlarge"
+               label="COM_ROUTES_START_POINT"
+               description="COM_ROUTES_START_POINT_DESCRIPTION" />
+
+        <field name="finish_point"
+               type="text"
+			   class="input-xlarge"
+               label="COM_ROUTES_FINISH_POINT"
+               description="COM_ROUTES_FINISH_POINT_DESCRIPTION" />
+
+        <field name="id"
+               type="hidden"
+               label=""/>
+
+        <field name="id"
+               type="test"
+               label="" />
+
+        <field name="intermediate_point1"
+               type="text"
+			   class="input-xlarge"
+               label=""
+               description="" />
+
+        <field name="intermediate_point2"
+               type="text"
+			   class="input-xlarge"
+               label=""
+               description="" />
+
+        <field name="intermediate_point3"
+               type="text"
+			   class="input-xlarge"
+               label=""
+               description="" />
+
+        <field name="intermediate_point4"
+               type="text"
+			   class="input-xlarge"
+               label=""
+               description="" />
+
+        <field name="intermediate_point5"
+               type="text"
+			   class="input-xlarge"
+               label=""
+               description="" />
+
+        <field name="intermediate_point6"
+               type="text"
+			   class="input-xlarge"
+               label=""
+               description="" />
+
+        <field name="intermediate_point7"
+               type="text"
+			   class="input-xlarge"
+               label=""
+               description="" />
+
+        <field name="intermediate_point8"
+               type="text"
+			   class="input-xlarge"
+               label=""
+               description="" />
+
+        <field
+                type="spacer"
+                hr="false" />
+
+    </fieldset>
+
+
+    <fieldset name="tabl" label="COM_ROUTES_ITEM_TABLE" description="COM_ROUTES_ITEM_TABLE_DESC">
+
+        <field name="published_table"
+               type="list"
+               label="JSTATUS"
+               description="JFIELD_PUBLISHED_DESC"
+               class="chzn-color-state"
+               filter="intval"
+               size="1"
+               default="0">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+
+        <field
+                type="spacer"
+                hr="true" />
+
+        <field name="timetable"
+               type="tabl"
+               label="COM_ROUTES_TIMETABLE"
+               description="COM_ROUTES_TIMETABLE_DESCRIPTION" />
+
+        <field
+                type="spacer"
+                hr="true" />
+
+        <field name="note"
+               type="textarea"
+               rows="5"
+               filter="JComponentHelper::filterText"
+               class="input-xlarge"
+               default=""
+               label="COM_ROUTES_NOTE"
+               description="COM_ROUTES_NOTE_DESCRIPTION"
+               size="50" />
+
+        <field
+                type="spacer"
+                hr="true" />
+
+        <field name="id"
+               type="hidden"
+               label=""/>
+
+        <field name="id"
+               type="tel"
+               label="" />
+
+        <field name="phone_dispatcher1"
+               type="text"
+               default=""
+               label=""
+               description=""
+               size="20" />
+
+        <field name="phone_dispatcher2"
+               type="text"
+               default=""
+               label=""
+               description=""
+               size="20" />
+
+        <field name="phone_dispatcher3"
+               type="text"
+               default=""
+               label=""
+               description=""
+               size="20" />
+
+        <field name="phone_dispatcher4"
+               type="text"
+               default=""
+               label=""
+               description=""
+               size="20" />
+
+        <field name="phone_dispatcher5"
+               type="text"
+               default=""
+               label=""
+               description=""
+               size="20" />
+
+        <field name="phone_dispatcher6"
+               type="text"
+               default=""
+               label=""
+               description=""
+               size="20" />
+
+        <field name="phone_dispatcher7"
+               type="text"
+               default=""
+               label=""
+               description=""
+               size="20" />
+
+        <field name="phone_dispatcher8"
+               type="text"
+               default=""
+               label=""
+               description=""
+               size="20" />
+
+        <field
+                type="spacer"
+                hr="false" />
+
+    </fieldset>
+
+    <fieldset name="addition" label="COM_ROUTES_ITEM_ADDITION" description="COM_ROUTES_ITEM_ADDITION_DESC">
+
+        <field name="published_img"
+               type="list"
+               label="JSTATUS"
+               description="JFIELD_PUBLISHED_DESC"
+               class="chzn-color-state"
+               filter="intval"
+               size="1"
+               default="0">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+
+        <field
+                type="spacer"
+                hr="true" />
+
+        <fields name="img_start">
+            <field name="image_start"
+                   type="media"
+                   label="COM_ROUTES_ITEM_IMG_START"
+                   description="COM_ROUTES_ITEM_IMG_START_DESCRIPTION" />
+        </fields>
+
+        <field name="img_start_title"
+               type="text"
+			   class="input-xxlarge"
+               label="COM_ROUTES_ITEM_IMG_START_TITLE"
+               description="COM_ROUTES_ITEM_IMG_START_TITLE_DESCRIPTION" />
+
+        <field name="img_start_desc"
+               type="editor"
+               filter="JComponentHelper::filterText"
+               label="COM_ROUTES_ITEM_IMG_START_TEXT"
+               description="COM_ROUTES_ITEM_IMG_START_TEXT_DESCRIPTION"
+               buttons="true" />
+
+        <field
+                type="spacer"
+                hr="true" />
+
+        <fields name="img_finish">
+            <field name="image_finish"
+                   type="media"
+                   label="COM_ROUTES_ITEM_IMG_FINISH"
+                   description="COM_ROUTES_ITEM_IMG_FINISH_DESCRIPTION" />
+        </fields>
+
+        <field name="img_finish_title"
+               type="text"
+			   class="input-xxlarge"
+               label="COM_ROUTES_ITEM_IMG_FINISH_TITLE"
+               description="COM_ROUTES_ITEM_IMG_FINISH_TITLE_DESCRIPTION" />
+
+        <field name="img_finish_desc"
+               type="editor"
+               filter="JComponentHelper::filterText"
+               label="COM_ROUTES_ITEM_IMG_FINISH_TEXT"
+               description="COM_ROUTES_ITEM_IMG_FINISH_TEXT_DESCRIPTION"
+               buttons="true" />
+
+        <field
+                type="spacer"
+                hr="true" />
+
+        <fields name="img_route">
+            <field name="image_route"
+                   type="media"
+                   label="COM_ROUTES_ITEM_IMG_ROUTE"
+                   description="COM_ROUTES_ITEM_IMG_ROUTE_DESCRIPTION" />
+        </fields>
+
+        <field name="img_route_title"
+               type="text"
+			   class="input-xxlarge"
+               label="COM_ROUTES_ITEM_IMG_ROUTE_TITLE"
+               description="COM_ROUTES_ITEM_IMG_ROUTE_TITLE_DESCRIPTION" />
+
+        <field name="img_route_desc"
+               type="editor"
+               filter="JComponentHelper::filterText"
+               label="COM_ROUTES_ITEM_IMG_ROUTE_TEXT"
+               description="COM_ROUTES_ITEM_IMG_ROUTE_TEXT_DESCRIPTION"
+               buttons="true" />
+
+        <field
+                type="spacer"
+                hr="true" />
+
+    </fieldset>
+
+    <fieldset name="bus" label="COM_ROUTES_ITEM_BUSES" description="COM_ROUTES_ITEM_BUSES_DESC">
+
+        <field name="published_slider"
+               type="list"
+               label="JSTATUS"
+               description="JFIELD_PUBLISHED_DESC"
+               class="chzn-color-state"
+               filter="intval"
+               size="1"
+               default="0">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+
+        <field
+                type="spacer"
+                hr="true" />
+
+        <field
+                name="buses"
+                type="vssql"
+                multiple="true"
+                query_id="language"
+                query="SELECT id, CONCAT(brand,' ',model) AS title FROM #__buses WHERE language = '{query_id}'"
+                label="COM_ROUTES_CHOOSE_BUSES"
+                description="COM_ROUTES_CHOOSE_BUSES_DESC"
+                key_field="id"
+                header="  "
+                value_field="title" />
+
+        <field
+                type="spacer"
+                hr="true" />
+
+    </fieldset>
+
+    <fieldset name="add_text" label="COM_ROUTES_ITEM_ADDITIONALY_TEXT" descriptio="COM_ROUTES_ITEM_ADDITIONALY_TEXT_DES">
+
+        <field name="published_additionally"
+               type="list"
+               label="JSTATUS"
+               description="JFIELD_PUBLISHED_DESC"
+               class="chzn-color-state"
+               filter="intval"
+               size="1"
+               default="0">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>
+
+        <field
+                type="spacer"
+                hr="true" />
+
+        <field name="text_additionally"
+               type="editor"
+               filter="JComponentHelper::filterText"
+               label="COM_ROUTES_ITEM_TEXT_ADDITIONALLY"
+               description="COM_ROUTES_ITEM__TEXT_ADDITIONALLY_DESCRIPTION"
+               buttons="true" />
+
+        <field
+                type="spacer"
+                hr="true" />
+
+    </fieldset>
+
+</form>

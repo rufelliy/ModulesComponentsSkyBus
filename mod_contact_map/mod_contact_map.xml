@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="update">
+
+    <name>MOD_CONTACT_MAP</name>
+    <author>Joomla Module</author>
+    <creationDate>April 2018</creationDate>
+    <copyright>Copyright (C) Rufus</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <authorEmail>rufelliy@i.ua</authorEmail>
+    <authorUrl>www.joomla.org</authorUrl>
+    <version>3.0.0</version>
+    <description></description>
+
+    <files>
+
+        <filename module="mod_contact_map">mod_contact_map.php</filename>
+        <filename>mod_contact_map_mail.php</filename>
+        <filename>mod_contact_map.xml</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>tmpl</folder>
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>language</folder>
+
+    </files>
+
+    <config>
+
+        <fields name="params">
+
+            <fieldset name="basic">
+
+                <field
+                        name="adres_office"
+                        type="note"
+                        default=""
+                        class="input-large"
+                        label="MOD_CONTACT_MAP_ADRES_OFFICE"
+                        size="20" />
+
+                <field
+                        name="street"
+                        type="text"
+                        default=""
+                        label="MOD_CONTACT_MAP_STREET"
+                        description="MOD_CONTACT_MAP_STREET_DESC"
+                        size="20" />
+
+                <field
+                        name="house"
+                        type="text"
+                        default=""
+                        label="MOD_CONTACT_MAP_HOUSE"
+                        description="MOD_CONTACT_MAP_HOUSE_DESC"
+                        size="20" />
+
+                <field
+                        name="town"
+                        type="text"
+                        default=""
+                        label="MOD_CONTACT_MAP_TOWN"
+                        description="MOD_CONTACT_MAP_TOWN_DESC"
+                        size="20" />
+
+                <field
+                        name="region"
+                        type="text"
+                        default=""
+                        label="MOD_CONTACT_MAP_REGION"
+                        description="MOD_CONTACT_MAP_REGION_DESC"
+                        size="20" />
+
+                <field
+                        name="index"
+                        type="text"
+                        default=""
+                        label="MOD_CONTACT_MAP_POST"
+                        description="MOD_CONTACT_MAP_POST_DESC"
+                        size="20" />
+
+                <field
+                        type="spacer"
+                        hr="true" />
+
+                <field
+                        name="phones"
+                        type="note"
+                        default=""
+                        class="input-large"
+                        label="MOD_CONTACT_MAP_PHONES"
+                        size="20" />
+				
+				 <field
+                        name="link1"
+                        type="text"
+                        default=""
+                        label="MOD_CONTACT_MAP_LINK1"
+                        description="MOD_CONTACT_MAP_LINK1_DESC"
+                        size="20" />
+
+                <field
+                        name="phone1"
+                        type="tel"
+                        default=""
+                        label="MOD_CONTACT_MAP_TEL1"
+                        description="MOD_CONTACT_MAP_TEL1_DESC"
+                        size="20" />
+
+                <field
+                        name="phone2"
+                        type="tel"
+                        default=""
+                        label="MOD_CONTACT_MAP_TEL2"
+                        description="MOD_CONTACT_MAP_TEL2_DESC"
+                        size="20" />
+				
+				 <field
+                        name="link2"
+                        type="text"
+                        default=""
+                        label="MOD_CONTACT_MAP_LINK2"
+                        description="MOD_CONTACT_MAP_LINK2_DESC"
+                        size="20" />
+
+                <field
+                        name="phone3"
+                        type="tel"
+                        default=""
+                        label="MOD_CONTACT_MAP_TEL3"
+                        description="MOD_CONTACT_MAP_TEL3_DESC"
+                        size="20" />
+
+                <field
+                        name="phone4"
+                        type="tel"
+                        default=""
+                        label="MOD_CONTACT_MAP_TEL4"
+                        description="MOD_CONTACT_MAP_TEL4_DESC"
+                        size="20" />
+
+                <field
+                        name="phone5"
+                        type="tel"
+                        default=""
+                        label="MOD_CONTACT_MAP_TEL5"
+                        description="MOD_CONTACT_MAP_TEL5_DESC"
+                        size="20" />
+
+                <field
+                        type="spacer"
+                        hr="true" />
+
+                <field
+                        name="email"
+                        type="email"
+                        default=""
+                        label="MOD_CONTACT_MAP_EMAIL"
+                        description="MOD_CONTACT_MAP_EMAIL_DESC"
+                        size="20" />
+
+                <field
+                        type="spacer"
+                        hr="true" />
+
+                <field
+                        name="APIkey"
+                        type="text"
+                        default=""
+                        label="MOD_CONTACT_MAP_API"
+                        description="MOD_CONTACT_MAP_API_DESC"
+                        size="20" />
+
+                <field
+                        type="spacer"
+                        hr="true" />
+
+                <field
+                        name="map"
+                        type="note"
+                        label="MOD_CONTACT_MAP_COORD_DESC" />
+
+                <field
+                        name="lat"
+                        type="text"
+                        default=""
+                        label="MOD_CONTACT_MAP_LAT"
+                        description="MOD_CONTACT_MAP_LAT_DESC"
+                        size="20" />
+
+                <field
+                        name="lng"
+                        type="text"
+                        default=""
+                        label="MOD_CONTACT_MAP_LNG"
+                        description="MOD_CONTACT_MAP_LNG_DESC"
+                        size="20" />
+
+            </fieldset>
+
+            <fieldset name="advanced">
+                <field
+                        name="moduleclass_sfx"
+                        type="text"
+                        default=""
+                        label="MOD_CONTACT_MAP_ADD_CLASS"
+                       description="MOD_CONTACT_MAP_ADD_CLASS_DESC" />
+            </fieldset>
+
+        </fields>
+
+    </config>
+</extension>

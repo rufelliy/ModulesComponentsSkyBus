@@ -1,0 +1,187 @@
+/*==========  Desktop First Method  ==========*/
+
+@media only screen and (max-width : 1920px) {
+
+}
+
+@media only screen and (max-width : 1760px) {
+
+}
+
+@media only screen and (max-width : 1600px) {
+
+}
+
+@media only screen and (max-width : 1440px) {
+}
+
+
+@media only screen and (max-width : 1300px) {
+
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 1024px) {
+
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+
+    .wrap {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*Контакти та форма зворотнього звязку на головній*/
+    #contacts, #callback {
+        margin-top: 50px;
+    }
+
+    /*Карта проїзду та контакти на головній*/
+    #map_container {
+        height: 720px;
+    }
+    #map {
+        height: 720px;
+    }
+    #contacts, #callback {
+        top: 0px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+@media only screen and (max-width : 700px) {
+
+}
+
+@media only screen and (max-width : 660px) {
+
+}
+@media only screen and (max-width : 600px) {
+
+}
+
+@media only screen and (max-width : 560px) {
+
+}
+
+
+@media only screen and (max-width : 540px) {
+
+}
+
+
+@media only screen and (max-width : 510px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+
+@media only screen and (max-width : 465px) {
+
+}
+
+
+@media only screen and (max-width : 460px) {
+
+}
+
+@media only screen and (max-width : 454px) {
+}
+
+@media only screen and (max-width : 446px) {
+
+}
+
+@media only screen and (max-width : 436px) {
+
+}
+
+@media only screen and (max-width : 435px) {
+
+}
+
+
+@media only screen and (max-width : 400px) {
+
+}
+
+
+@media only screen and (max-width : 400px) {
+
+}
+
+
+@media only screen and (max-width : 340px) {
+
+}
+
+@media only screen and (max-width : 375px) {
+
+}
+
+@media only screen and (max-width : 352px) {
+
+}
+
+@media only screen and (max-width : 346px) {
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    /*Розміщення контактів на головній сторінці*/
+    .wrap {
+        margin-right: -5%;
+    }
+}
+
+
+@media only screen and (max-width : 300px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

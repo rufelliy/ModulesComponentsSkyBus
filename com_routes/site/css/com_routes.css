@@ -1,0 +1,1041 @@
+/*********** Routes.php************/
+/*routes_info */
+.routes_info {
+    position: relative;
+    color: #FFFFFF;
+    height: 165px;
+    padding: 30px 0px 30px 0px;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    background-image: url(/images/sub_navbar_route.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.routes_info .icon_our_routes {
+    margin-left: 25px;
+    margin-top: 25px;
+    background-image: url(/images/sprites.png);
+    background-position: -150px -50px;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+.routes_info .our_routes p {
+    float: left;
+    color: #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: -38px;
+    padding-top: 0px;
+    padding-left: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+/* nav_routes */
+.nav_routes{
+    width:100%;
+    list-style:none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom:10px;
+    margin-top: 34px;
+    /*margin-left: 5%;*/
+}
+.slick-prev:before, .slick-next:before {
+    position: absolute;
+    margin-top: -27px;
+}
+.slick-initialized .slick-slide {
+    width: 20px;
+}
+.slick-arrow {
+    position: absolute;
+    top: 1px;
+}
+#prev_arrow {
+    left: 10px;
+}
+#next_arrow {
+    right: -10px;
+}
+
+.nav_routes li{
+    float:left;
+    position:relative;
+	outline: none;
+    display:block;
+}
+.nav_routes li a{
+    padding: 3px 0px;
+    float: left;
+    border-bottom: 1px solid transparent;
+    color:#fff;
+    opacity: 0.5;
+    text-decoration:none;
+}
+.route_item {
+    margin-left: 10px;
+}
+/*Випадаючі пункти*/
+.nav_routes ul{
+    list-style:none;
+    float: left;
+    padding-left: 0;
+    left:-9999px;
+    opacity:0;
+    -webkit-transition:0.25s linear opacity;
+}
+.nav_routes ul li{
+    padding-top:1px;
+    float:left;
+    width: 500px;
+    text-transform: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 8px;
+
+}
+.nav_routes li a:hover{
+    color:#fff;
+    opacity: 1;
+    border-bottom: 1px solid #FFFFFF;
+    text-decoration:none;
+    outline: none;
+}
+.nav_routes li:hover ul{
+    left:0;
+    opacity:1;
+    outline: none;
+}
+.nav_routes li:hover a{
+    color:#fff;
+    opacity: 1;
+    border-bottom: 1px solid #FFFFFF;
+    text-decoration:none;
+    outline: none;
+}
+.nav_routes li:hover ul a{
+    text-decoration:none;
+    outline: none;
+    -webkit-transition:-webkit-transform 0.075s linear;
+}
+.nav_routes li:hover .nav_routes li {
+    background:#333;
+    outline: none;
+    background:rgba(51,51,51,0.75);
+    text-decoration:underline;
+    -moz-transform:scale(1.05);
+    -webkit-transform:scale(1.05);
+}
+/*Map_routes*/
+.rout {
+    max-width: 100%;
+    /*float: left;*/
+    margin-bottom: 30px;
+}
+.rout h3 {
+    text-align: left;
+    color: #FFFFFF;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.rout h5 {
+    text-align: left;
+    color: #6d4f75;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 14px;
+}
+.rout p {
+    float: left;
+	clear: both;
+    text-align: left;
+    margin-top: 40px;
+    line-height: 2;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 12px;
+}
+.rout .buttns {
+    float: left;
+    height: auto;
+    display: block;
+    /*margin-top: 60px;*/
+    margin-left: 30%;
+    margin-bottom: 50px;
+}
+.rout .buttns .tickets {
+    float: left;
+    margin-right: 90px;
+    margin-bottom: 20px;
+    border: 1px solid #FFFFFF;
+    padding: 15px 30px 15px 30px;
+    border-radius: 30px;
+    color: #FFFFFF;
+}
+.rout .buttns .tickets {
+    background-color: #413e64;
+    border: 1px solid #413e64;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.rout .buttns .memorandum {
+    float: left;
+    background-color: #413e64;
+    border: 1px solid #413e64;
+    padding: 15px 30px 15px 30px;
+    border-radius: 30px;
+    color: #FFFFFF;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.rout .buttns .tickets:hover, .rout .buttns .tickets:focus {
+    background-color: #32304e;
+    text-decoration: none;
+}
+.rout .buttns .memorandum:hover, .rout .buttns .memorandum:focus {
+    background-color: #32304e;
+    text-decoration: none;
+}
+.skybus .buttns .memorandum:hover, .skybus .buttns .memorandum:focus {
+    text-decoration: none;
+    background-color: #32304e;
+    border: 1px solid #32304e;
+}
+/*Popup для меморандуму*/
+.popup {
+    padding:15px 15px;
+    position:fixed;
+    top:100px;
+    left:200px;
+    right: 200px;
+    display:none;
+    overflow:hidden;
+    border:1px solid #ccc;
+    background:#fff;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:5px;
+    z-index:100;
+    behavior: url(PIE.htc);
+}
+.popup p {
+    color: #6d4f75;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 12px;
+}
+.popup a.close {
+    width:16px;
+    height:16px;
+    display:block;
+    text-indent:-9999px;
+    position:absolute;
+    top:10px;
+    right:10px;
+    background:url(/images/close.png) no-repeat;
+}
+.memor {
+    width:auto;
+}
+#overlay {
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    display:none;
+    background:#000;
+    opacity:.8;
+}
+.rout .abt_rout {
+    float: left;
+    display: block;
+    width: 55%;
+    background-image: url(/images/route_01_blue.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.rout .skybus {
+    float: left;
+    display: block;
+    width: 55%;
+    background-image: url(/images/route_01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.rout .abt_rout .route {
+    float: right;
+    width: 60%;
+    margin-right: 10%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.rout .abt_rout .route .title {
+    float: left;
+    display: block;
+}
+.rout .abt_rout .route .route_icons {
+    display: block;
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-left: 20px;
+    border-left: 1px solid #FFFFFF;
+}
+.rout .abt_rout .route .interval, .rout .abt_rout .route .date, .rout .abt_rout .route .daily {
+    width: 120px;
+    margin-top: 10px;
+}
+.rout .abt_rout .route .interval .interval_icon {
+    background-image: url(/images/sprites.png);
+    background-position: 0px -50px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.rout .abt_rout .route .date .date_icon {
+    background-image: url(/images/sprites.png);
+    background-position: -50px -50px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.rout .abt_rout .route .daily .daily_icon {
+    background-image: url(/images/sprites.png);
+    background-position: -100px -50px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+.rout .abt_rout .route .interval p, .rout .abt_rout .route .date p, .rout .abt_rout .route .daily p {
+    margin-top: -35px;
+    margin-left: 35px;
+    font-weight: 500;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 1em;
+    color: #ffffff;
+}
+.rout .map_routes_container {
+    float: left;
+    display: block;
+    position: relative;
+    height: 620px;
+}
+#map_routes {
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    margin-left: 55%;
+}
+#map_routes_container {
+    position: relative;
+    /*height: 420px;*/
+}
+#map {
+    position: absolute;
+    width: 100%;
+    height: 620px;
+    top: 0;
+}
+/* Timetable */
+.time_table {
+    clear: both;
+    background-color: #f7f7f7;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.timetable {
+    display: block;
+    margin-top: 100px;
+    margin-left: 1%;
+    margin-bottom: 90px;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.timetable .table {
+    border-bottom: 2px solid #8bc4f2;
+    margin-top: 50px;
+    width: 100%;
+    table-layout: fixed;
+}
+.timetable .skybus {
+    border-bottom: 2px solid #f081a8;
+    margin-top: 100px;
+}
+.timetable td {
+    color: #413e64;
+    font-weight: 500;
+    font-size:11px;
+    width: 100%;
+    text-align: center;
+}
+.timetable tr:nth-child(2n+1) td {
+    background-color: #eae9e9;
+    border-bottom: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+}
+.timetable tr:nth-child(-n+1) td {
+    color: #FFFFFF;
+    background-color: #413e64;
+    padding: 8px 40px;
+    font-weight: 500;
+    font-size:11px;
+}
+.timetable tr:last-child td {
+    border-bottom: 2px solid #8bc4f2;
+}
+.timetable .table_header {
+    color: #FFFFFF;
+    background-color: #413e64;
+    font-weight: 500;
+    font-size:11px;
+}
+.timetable .fon_gray {
+    background-color: #eae9e9;
+    border-bottom: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+}
+.timetable p {
+    font-weight: 500;
+    float: left;
+    text-transform: none;
+}
+.tram_schedule {
+    display: block;
+    margin-top: 100px;
+    margin-left: 5%;
+    color: #6f6c89;
+}
+.tram_schedule h3 {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.tram_schedule p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.main_routes {
+    clear: both;
+    position: relative;
+    /*margin-top: 45px;*/
+	/*padding-top: 30px;*/
+    /*clear: both;*/
+}
+.main_routes .aeroport,
+.main_routes .vokzal,
+.main_routes .marshrut {
+    border-top: 20px solid #8bc4f2;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.main_routes .skybus,
+.main_routes .skybus,
+.main_routes .skybus {
+    border-top: 20px solid #c16591;
+}
+.main_routes .aeroport .aeroport_img {
+    width: 350px;
+    height: 350px;
+    background-image: url(/images/departure.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.main_routes .aeroport {
+    float: left;
+    display: block;
+    width: 350px;
+}
+.main_routes .vokzal .vokzal_img {
+    width: 350px;
+    height: 350px;
+    background-image: url(/images/arrival.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.main_routes .vokzal {
+    float: left;
+    display: block;
+    width: 350px;
+    margin-left: 30px;
+}
+.main_routes .marshrut .marshrut_img {
+    width: 350px;
+    height: 350px;
+    background-image: url(/images/route.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.main_routes .marshrut {
+    float: left;
+    display: block;
+    width: 350px;
+    margin-left: 30px;
+}
+.main_routes .marshrut h3, .main_routes .aeroport h3, .main_routes .vokzal h3{
+    margin-top: 50px;
+    color: #6f6c89;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.main_routes .marshrut p, .main_routes .aeroport p, .main_routes .vokzal p{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: #6f6c89;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 2;
+}
+.buses_on_routes {
+    position: relative;
+}
+.buses_on_routes > div {
+    display: inline-block;
+}
+.buses_on_routes .aeroport {
+    float: left;
+    display: block;
+    width: 350px;
+}
+.buses_on_routes .vokzal {
+    float: left;
+    display: block;
+    width: 350px;
+}
+.buses_on_routes .marshrut {
+    float: left;
+    display: block;
+    width: 350px;
+}
+.buses_on_routes .marshr {
+    float: left;
+    display: block;
+    width: 350px;
+}
+.rout_slider {
+    background-color: #f7f7f7;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.sider_container {
+    margin-top: 60px;
+    background-color: #f7f7f7;
+    height: 400px;
+}
+.sider_container h3 {
+    color: #413e64;
+    padding-top: 30px;
+    margin-top: -50px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.sider_container .slide_item {
+    width: 215px;
+    height: 215px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sider_container .one {
+    background-image: url(/images/bus_01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.sider_container .two {
+    background-image: url(/images/bus_02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.sider_container .three {
+    background-image: url(/images/bus_03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.sider_container .four {
+    background-image: url(/images/bus_04.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.sider_container .five {
+    background-image: url(/images/bus_01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.sider_container .six {
+    background-image: url(/images/bus_02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.sider_container .slide_item a {
+    color: #FFFFFF;
+    padding: 15px;
+    background-color: #413e64;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.sider_container .slide_item a:hover {
+    text-decoration: none;
+    background-color: #32304e;
+}
+.sider_container .slide_item p {
+    display: none;
+    position: absolute;
+    width: 150px;
+    margin-left: 35px;
+    padding-top: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 18px;
+    height: 261px;
+    text-align: center;
+    color: #fff;
+}
+.sider_container .slide_item:hover p {
+    display: block;
+}
+.owl-carousel .owl-item {
+}
+.sider_container .slide_item:before {
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    content: "";
+    position:absolute;
+    width: 215px;
+    height: 100%;
+}
+.sider_container .slide_item:hover:before {
+    background: rgba(0,0,0,0.5);
+    border-top: 20px solid #8bc4f2;
+}
+.skybus .slide_item:hover:before {
+    background: rgba(0,0,0,0.5);
+    border-top: 20px solid #c16591;
+}
+.sider_container {
+    position: relative;
+}
+.next_button {
+    color: #000000;
+    font-size: 20px;
+    position: absolute;
+    margin-right: -45px;
+    z-index: 10;
+    cursor: pointer;
+    top: 43%;
+    padding: 0px;
+    border-radius: 10em;
+}
+.prev_button {
+    color: #000000;
+    font-size: 20px;
+    position: absolute;
+    margin-left: -45px;
+    z-index: 10;
+    cursor: pointer;
+    top: 43%;
+    padding: 0px;
+    border-radius: 10em;
+}
+.next_button {
+    background-image: url("/images/arrow_bus_right.png");
+    width: 12px;
+    height: 21px;
+    position: absolute;
+    right: 35px;
+}
+.prev_button {
+    background-image: url("/images/arrow_bus_left.png");
+    width: 12px;
+    height: 21px;
+    position: absolute;
+    left: 35px;
+}
+.additionally h3 {
+    color: #413e64;
+    margin-top: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.additionally p {
+    color: #413e64;
+    margin-top: 15px;
+    margin-bottom: 100px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 2;
+}
+.callback_form_routs {
+    width: 360px;
+    height: 420px;
+    top: 100px;
+    color: #595677;
+    background-color: #ffffff;
+    -webkit-backface-visibility: hidden;
+    bottom: 97px;
+    margin: 10px auto 15px;
+    text-align: center;
+    -webkit-box-shadow: 8px 8px 25px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 8px 8px 25px 0px rgba(0,0,0,0.2);
+    box-shadow: 8px 8px 25px 0px rgba(0,0,0,0.2);
+}
+.callback_form_routs .button {
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 10px 15px;
+}
+.callback_form_routs h3 {
+    margin-top: 26px;
+    padding-top: 30px;
+    color: #413e64;
+    font-weight: 300;
+    font-size: 30px;
+}
+.callback_form_routs h5 {
+    margin-top: -4px;
+    color: #67b7ef;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+#callback_message_rout {
+    width: 360px;
+    height: 420px;
+    top: 100px;
+    color: #595677;
+    background-color: #ffffff;
+    -webkit-backface-visibility: hidden;
+    bottom: 97px;
+    margin: 10px auto 15px;
+    text-align: center;
+    -webkit-box-shadow: 8px 8px 25px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 8px 8px 25px 0px rgba(0,0,0,0.2);
+    box-shadow: 8px 8px 25px 0px rgba(0,0,0,0.2);
+}
+#callback_message_rout .button {
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 10px 15px;
+}
+#callback_message_rout h3 {
+    margin-top: 26px;
+    padding-top: 30px;
+    color: #413e64;
+    font-weight: 300;
+    font-size: 30px;
+}
+#callback_message_rout h5 {
+    margin-top: -4px;
+    color: #67b7ef;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.fancybox-opened .fancybox-skin {
+    -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+.fancybox-skin {
+    position: relative;
+    text-shadow: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.b-popup{
+    display: none;
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+    z-index: 999;
+}
+.b-popup_load{
+    display: none;
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+    z-index: 999;
+}
+#callback_message {
+    position: absolute;
+    display: none;
+    width: 360px;
+    height: 420px;
+    top: -10px;
+    color: #595677;
+    background-color: #ffffff;
+    -webkit-backface-visibility: hidden;
+    bottom: 97px;
+    margin: 10px auto 15px;
+    text-align: center;
+    -webkit-box-shadow: 8px 8px 25px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 8px 8px 25px 0px rgba(0,0,0,0.2);
+    box-shadow: 8px 8px 25px 0px rgba(0,0,0,0.2);
+}
+.callback_message_routs {
+    display: none;
+    width: 360px;
+    height: 420px;
+    top: 100px;
+    color: #595677;
+    background-color: #ffffff;
+    -webkit-backface-visibility: hidden;
+    bottom: 97px;
+    margin: 10px auto 15px;
+    text-align: center;
+    -webkit-box-shadow: 8px 8px 25px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 8px 8px 25px 0px rgba(0,0,0,0.2);
+    box-shadow: 8px 8px 25px 0px rgba(0,0,0,0.2);
+}
+
+/*Анімація очікування відправлення форми*/
+#floatingCirclesG{
+    position:relative;
+    width:125px;
+    height:125px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45vh;
+    transform:scale(0.6);
+    -o-transform:scale(0.6);
+    -ms-transform:scale(0.6);
+    -webkit-transform:scale(0.6);
+    -moz-transform:scale(0.6);
+}
+.f_circleG{
+    position:absolute;
+    background-color:rgb(255,255,255);
+    height:22px;
+    width:22px;
+    border-radius:12px;
+    -o-border-radius:12px;
+    -ms-border-radius:12px;
+    -webkit-border-radius:12px;
+    -moz-border-radius:12px;
+    animation-name:f_fadeG;
+    -o-animation-name:f_fadeG;
+    -ms-animation-name:f_fadeG;
+    -webkit-animation-name:f_fadeG;
+    -moz-animation-name:f_fadeG;
+    animation-duration:1.2s;
+    -o-animation-duration:1.2s;
+    -ms-animation-duration:1.2s;
+    -webkit-animation-duration:1.2s;
+    -moz-animation-duration:1.2s;
+    animation-iteration-count:infinite;
+    -o-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-iteration-count:infinite;
+    animation-direction:normal;
+    -o-animation-direction:normal;
+    -ms-animation-direction:normal;
+    -webkit-animation-direction:normal;
+    -moz-animation-direction:normal;
+}
+#frotateG_01{
+    left:0;
+    top:51px;
+    animation-delay:0.45s;
+    -o-animation-delay:0.45s;
+    -ms-animation-delay:0.45s;
+    -webkit-animation-delay:0.45s;
+    -moz-animation-delay:0.45s;
+}
+#frotateG_02{
+    left:15px;
+    top:15px;
+    animation-delay:0.6s;
+    -o-animation-delay:0.6s;
+    -ms-animation-delay:0.6s;
+    -webkit-animation-delay:0.6s;
+    -moz-animation-delay:0.6s;
+}
+#frotateG_03{
+    left:51px;
+    top:0;
+    animation-delay:0.75s;
+    -o-animation-delay:0.75s;
+    -ms-animation-delay:0.75s;
+    -webkit-animation-delay:0.75s;
+    -moz-animation-delay:0.75s;
+}
+#frotateG_04{
+    right:15px;
+    top:15px;
+    animation-delay:0.9s;
+    -o-animation-delay:0.9s;
+    -ms-animation-delay:0.9s;
+    -webkit-animation-delay:0.9s;
+    -moz-animation-delay:0.9s;
+}
+#frotateG_05{
+    right:0;
+    top:51px;
+    animation-delay:1.05s;
+    -o-animation-delay:1.05s;
+    -ms-animation-delay:1.05s;
+    -webkit-animation-delay:1.05s;
+    -moz-animation-delay:1.05s;
+}
+#frotateG_06{
+    right:15px;
+    bottom:15px;
+    animation-delay:1.2s;
+    -o-animation-delay:1.2s;
+    -ms-animation-delay:1.2s;
+    -webkit-animation-delay:1.2s;
+    -moz-animation-delay:1.2s;
+}
+#frotateG_07{
+    left:51px;
+    bottom:0;
+    animation-delay:1.35s;
+    -o-animation-delay:1.35s;
+    -ms-animation-delay:1.35s;
+    -webkit-animation-delay:1.35s;
+    -moz-animation-delay:1.35s;
+}
+#frotateG_08{
+    left:15px;
+    bottom:15px;
+    animation-delay:1.5s;
+    -o-animation-delay:1.5s;
+    -ms-animation-delay:1.5s;
+    -webkit-animation-delay:1.5s;
+    -moz-animation-delay:1.5s;
+}
+@keyframes f_fadeG{
+    0%{
+        background-color: #BDBDBD;
+    }
+    100%{
+        background-color: #BDBDBD;
+    }
+}
+@-o-keyframes f_fadeG{
+    0%{
+        background-color: #BDBDBD;
+    }
+    100%{
+        background-color: #BDBDBD;
+    }
+}
+@-ms-keyframes f_fadeG{
+    0%{
+        background-color: #BDBDBD;
+    }
+    100%{
+        background-color: #BDBDBD;
+    }
+}
+@-webkit-keyframes f_fadeG{
+    0%{
+        background-color: #BDBDBD;
+    }
+    100%{
+        background-color: #BDBDBD;
+    }
+}
+@-moz-keyframes f_fadeG{
+    0%{
+        background-color: #BDBDBD;
+    }
+    100%{
+        background-color: #BDBDBD;
+    }
+}
+
+.popup {
+    padding:15px 15px;
+    position:fixed;
+    top:100px;
+    left:200px;
+    right: 200px;
+    display:none;
+    overflow:hidden;
+    border:1px solid #ccc;
+    background:#fff;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:5px;
+    z-index:100;
+    behavior: url(PIE.htc);
+}
+.popup p {
+    color: #6d4f75;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 12px;
+}
+.popup a.close {
+    width:16px;
+    height:16px;
+    display:block;
+    text-indent:-9999px;
+    position:absolute;
+    top:10px;
+    right:10px;
+    background:url(/images/close.png) no-repeat;
+}
+.memor {
+    width:auto;
+}
+#overlay {
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    display:none;
+    background:#000;
+    opacity:.8;
+}

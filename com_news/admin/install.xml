@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension type="component" version="3.3" method="upgrade">
+
+    <name>COM_NEWS</name>
+    <creationDate>May 2018</creationDate>
+    <author>Rufel</author>
+    <authorEmail>rufelliy@i.ua</authorEmail>
+    <authorUrl>http://atas.com</authorUrl>
+    <license>License Info</license>
+    <version>3.0.0</version>
+
+    <description>COM_NEWS_DESCRIPTION</description>
+
+    <files folder="site">
+
+        <folder>language</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+        <folder>css</folder>
+        <folder>js</folder>
+
+        <filename>news.php</filename>
+        <filename>controller.php</filename>
+
+    </files>
+
+    <languages folder="site">
+        <language tag="en-GB">language/en-GB/en-GB.com_news.ini</language>
+        <language tag="ru-RU">language/ru-RU/ru-RU.com_news.ini</language>
+        <language tag="uk-UA">language/uk-UA/uk-UA.com_news.ini</language>
+    </languages>
+
+    <install>
+        <sql>
+
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+
+        </sql>
+    </install>
+
+    <uninstall>
+        <sql>
+
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+
+        </sql>
+    </uninstall>
+
+    <administration>
+
+        <menu link="index.php?option=com_news">COM_NEWS</menu>
+
+        <files folder="admin">
+
+            <folder>controllers</folder>
+            <folder>language</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+
+            <filename>news.php</filename>
+            <filename>controller.php</filename>
+
+        </files>
+
+        <languages folder="admin">
+
+            <language tag="en-GB">language/en-GB/en-GB.com_news.ini</language>
+            <language tag="ru-RU">language/ru-RU/ru-RU.com_news.ini</language>
+            <language tag="uk-UA">language/uk-UA/uk-UA.com_news.ini</language>
+
+
+            <language tag="en-GB">language/en-GB/en-GB.com_news.sys.ini</language>
+            <language tag="ru-RU">language/ru-RU/ru-RU.com_news.sys.ini</language>
+            <language tag="uk-UA">language/uk-UA/uk-UA.com_news.sys.ini</language>
+
+        </languages>
+
+    </administration>
+
+</extension>
