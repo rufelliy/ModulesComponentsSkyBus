@@ -1,13 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: rufel
- * Date: 02.05.2018
- * Time: 15:32
- */
+
 defined('_JEXEC') or exit();
 
-//Отримуємо меню
+//Получаем меню
 $menu =& JSite::getMenu();
 $menutype = $menu->getActive()->menutype;
 $titlePage = $menu->getActive()->title;
