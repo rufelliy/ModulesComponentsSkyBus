@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: rufel
- * Date: 02.05.2018
- * Time: 15:32
- */
+
 defined('_JEXEC') or exit();
 
 $i = 1;
@@ -38,24 +33,24 @@ $i = 1;
                             <div class="news_short_content">
                                 <h3><?php echo $item->title; ?></h3>
 								<?php
-								# Змінна з датою з бази
+								# Переменная с датой с базы
 								$mysqldate = $item->publish_up;
 
-								# Перевод дати з бази  в формат часу Unix
+								# Перевод даты с базы  в формат времени Unix
 								$time = strtotime($mysqldate);
 
-								# Створюємо асоціативний масив де кожному числу місяця присвоюєм назву місяця
+								# Создаем асоциативный массив где каждому числу месяца присваиваем название месяца
 								$month_name = array( 1 => JText::_('COM_NEWS_JANUARY'), 2 => JText::_('COM_NEWS_FEBRUARY'), 3 => JText::_('COM_NEWS_MARCH'), 4 => JText::_('COM_NEWS_APRIL'), 5 => JText::_('COM_NEWS_MAY'), 6 => JText::_('COM_NEWS_JUNE'), 7 => JText::_('COM_NEWS_JULY'), 8 => JText::_('COM_NEWS_AUGUST'), 9 => JText::_('COM_NEWS_SEPTEMBER'), 10 => JText::_('COM_NEWS_OCTOBER'), 11 => JText::_('COM_NEWS_NOVEMBER'), 12 => JText::_('COM_NEWS_DECEMBER'));
 
-								#Отримуєм назву місяця, тут використовується наш створений масив
+								#Получаем название месяца, сдесь исспользуется наш созданный массив
 								$month = $month_name[ date( 'n',$time ) ];
 
-								$day   = date( 'j',$time ); # За допомогою функції date() отримуєм число дня
-								$year  = date( 'Y',$time ); # Отримуєм рік
-								$hour  = date( 'G',$time ); # Отримуєм значення години
-								$min   = date( 'i',$time ); # Отримуєм хвилини
+								$day   = date( 'j',$time ); # с помощью функции date() получаем число дня
+								$year  = date( 'Y',$time ); # получаем год
+								$hour  = date( 'G',$time ); # получаем значения часов
+								$min   = date( 'i',$time ); # получаем минуты
 
-								$date = "$day $month $year, $hour:$min";  # Збираємо пазл із змінних
+								$date = "$day $month $year, $hour:$min";  # собираем пазл из переменных
 
 								?>
                                 <p class="date"><?php echo $hour.':'.$min;?><br><?php echo $day.' '.$month.' '.$year;?></p>
