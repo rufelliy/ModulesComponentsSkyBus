@@ -20,14 +20,14 @@ $APIkey = $params->get('APIkey');
 $lat = $params->get('lat');
 $lng = $params->get('lng');
 
-//Отримуєм назву домена
+//Получаем название домена
 $uri = JFactory::getURI();
 $host = $uri->toString(array('host'));
 
 $session =& JFactory::getSession();
 $session->set("mail", $email);
 
-//Отримуємо меню
+//Получаем меню
 $menu =& JSite::getMenu();
 $menutype = $menu->getActive()->menutype;
 $titlePage = $menu->getActive()->title;
@@ -35,7 +35,7 @@ $menu_items = $menu->getItems('menutype',$menutype);
 
 $doc = &JFactory::getDocument();
 $module_name = 'mod_contact_map';
-//Підключаєм скріпт та стилі
+//Подключаем скрипт и стили
 $doc->addStylesheet( JURI::root(true) . "/modules/".$module_name."/css/".$module_name.".css" );
 $doc->addStylesheet( JURI::root(true) . "/modules/".$module_name."/css/".$module_name."_media.css" );
 $doc->addScript( JURI::root(true) . "/modules/".$module_name."/js/".$module_name.".js" );

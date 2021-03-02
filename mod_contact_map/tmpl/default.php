@@ -90,7 +90,7 @@ $tag = $lang->getTag();
     var map;
     function initialize() {
         geocoder = new google.maps.Geocoder();
-        //Якщо введені координати, то ставимо маркер за координатами
+        //Если введенные координаты, то ставим маркер за координатами
 		<?php if ($lat != '' && $lng != '') :?>
         var uluru = {lat: <?php echo $lat; ?>, lng: <?php echo $lng; ?>};
         var latlng = new google.maps.LatLng(<?php echo $lat-0.009; ?>, <?php echo $lng+0.01; ?>);
@@ -177,7 +177,7 @@ $tag = $lang->getTag();
     }
 
     function codeAddress() {
-        //Визначаємо координати для маркера за адресою
+        //Получаем координаты для маркера за адресом
 		<?php $address = $street.' '.$house.' '.$town.' '.$region;?>
         var address = "<?php echo $address; ?>";
         geocoder.geocode( { 'address': address}, function(results, status) {
