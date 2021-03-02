@@ -7,7 +7,7 @@ $text = JHtml::_('content.prepare', $text);
 
 use Joomla\Utilities\ArrayHelper;
 
-//Отримуємо меню
+//Получаем меню
 $menu =& JSite::getMenu();
 $menutype = $menu->getActive()->menutype;
 
@@ -21,7 +21,7 @@ $key = 0;
 
 $doc = &JFactory::getDocument();
 $module_name = 'mod_gallery';
-//Підключаєм скріпт та стилі
+//Подключаем скрипт и стили
 $doc->addStylesheet( JURI::root(true) . "/modules/".$module_name."/css/".$module_name.".css" );
 $doc->addStylesheet( JURI::root(true) . "/modules/".$module_name."/css/".$module_name."_media.css" );
 $doc->addScript( JURI::root(true) . "/modules/".$module_name."/js/".$module_name.".js" );

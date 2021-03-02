@@ -23,33 +23,33 @@ defined('_JEXEC') or die;
 </div>
 
 <div class="gallery_wrap">
-    <!--Фото одного розміру-->
+    <!--Фото одного размера-->
 	<?php $numbr = 1; ?>
     <?php foreach ($folder as $dir) :?>
 
-        <!--	    Змінна з датою з бази-->
+        <!--	    Переменная с датой с базы-->
         <?php $day = $data[$key]; ?>
 
-        <!--	    Перевод дати з бази  в формат часу Unix-->
+        <!--	    Перевод даты с базы  в формат времени Unix-->
         <?php $time = strtotime($day); ?>
 
-        <!--	    Створюємо асоціативний масив де кожному числу місяця присвоюєм назву місяця-->
+        <!--	    Создаем асоциативный массив где каждому числу месяца присваиваем название месяца-->
         <?php $month_name = array( 1 => JText::_('MOD_GALLERY_JANUARY'), 2 => JText::_('MOD_GALLERY_FEBRUARY'), 3 =>
             JText::_('MOD_GALLERY_MARCH'), 4 => JText::_('MOD_GALLERY_APRIL'), 5 => JText::_('MOD_GALLERY_MAY'), 6 =>
             JText::_('MOD_GALLERY_JUNE'), 7 => JText::_('MOD_GALLERY_JULY'), 8 => JText::_('MOD_GALLERY_AUGUST'), 9
         => JText::_('MOD_GALLERY_SEPTEMBER'), 10 => JText::_('MOD_GALLERY_OCTOBER'), 11 => JText::_('MOD_GALLERY_NOVEMBER'), 12 => JText::_('MOD_GALLERY_DECEMBER')); ?>
 
-        <!--	    Отримуєм назву місяця, тут використовується наш створений масив-->
+        <!--	    Получаем название месяца, здесь исспользуется наш созданный массив-->
         <?php $month = $month_name[ date( 'n',$time ) ]; ?>
-        <!--        За допомогою функції date() отримуєм число дня-->
+        <!--        С помощью функции date() получаем число дня-->
         <?php $day   = date( 'j',$time ); ?>
-        <!--        Отримуєм рік-->
+        <!--        Получаем год-->
         <?php $year  = date( 'Y',$time ); ?>
-        <!--        Отримуєм значення години-->
+        <!--        Получаем значение часов-->
         <?php $hour  = date( 'G',$time ); ?>
-        <!--        Отримуєм хвилини-->
+        <!--        Получаем минуты-->
         <?php $min   = date( 'i',$time ); ?>
-        <!--        Збираємо пазл із змінних-->
+        <!--        Собираем пазл из переменных-->
         <?php $date = "$day $month $year, $hour:$min";  ?>
 
         <div class="container">
@@ -69,9 +69,9 @@ defined('_JEXEC') or die;
 						<?php if ($dir != "-1") : ?>
                         <div class="clearfix mosaicflow">
                             <?php $files = scandir('images/gallery/'.$dir); ?>
-                            <!--                    Перебираємо усі файли-->
+                            <!--                    Перебираем все файлы-->
                             <?php foreach ($files as $file) : ?>
-                                <!--                        Поточний каталог та батьківський пропускаємо-->
+                                <!--                        Поточный каталог и родительский пропускаем-->
                                 <?php if (($file != ".") && ($file != "..")) : ?>
                                     <div class="mosaicflow__item">
                                         <a class="fancyimage<?php echo $numbr; ?>" data-fancybox-group="group" href="images/gallery/<?php echo $dir. "/" .$file ?>">
