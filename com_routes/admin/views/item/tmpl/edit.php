@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Rufelliy
- * Date: 30.03.2018
- * Time: 14:44
- */
+
 defined('_JEXEC') or exit();
 
 JHtml::_('formbehavior.chosen', 'select');//Для красивого отображения опубликовано/неопубликовано

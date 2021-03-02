@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Rufelliy
- * Date: 30.03.2018
- * Time: 14:43
- */
+
 defined('_JEXEC') or exit();
 
 

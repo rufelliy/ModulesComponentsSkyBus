@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Rufelliy
- * Date: 03.07.2018
- * Time: 12:49
- */
+
 defined('_JEXEC') or exit();
 
 JFormHelper::loadFieldClass('sql');

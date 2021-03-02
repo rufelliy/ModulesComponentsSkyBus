@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Rufelliy
- * Date: 06.06.2018
- * Time: 11:02
- */
+
 defined('_JEXEC') or exit();
 
 require_once JPATH_SITE . '/libraries/joomla/form/fields/list.php';

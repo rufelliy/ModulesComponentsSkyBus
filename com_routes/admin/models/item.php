@@ -1,10 +1,4 @@
  <?php
-/**
- * Created by PhpStorm.
- * User: Rufelliy
- * Date: 30.03.2018
- * Time: 14:53
- */
 
 use Joomla\Registry\Registry;
 

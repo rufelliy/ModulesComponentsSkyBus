@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Rufelliy
- * Date: 02.04.2018
- * Time: 12:50
- */
+
 defined('_JEXEC') or exit();
 
 class RoutesModelRoutes extends JModelList {

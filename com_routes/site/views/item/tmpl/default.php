@@ -1,17 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Rufelliy
- * Date: 03.04.2018
- * Time: 10:55
- */
+
 defined('_JEXEC') or exit();
 
 $pink = $this->item->backgound_color;
-//Передаємо параметр ввімкнення рожевого фону
+//Передадим параметр включения розового фона
 JFactory::getApplication()->setUserState( 'com_routes.view.backgound_color', $pink );
 
-//Отримуємо меню
+//Получаем меню
 $menu =& JSite::getMenu();
 $menutype = $menu->getActive()->menutype;
 $titlePage = $menu->getActive()->title;
@@ -34,7 +29,7 @@ $tag = $lang->getTag();
 
 ?>
 
-<!--Виводим блок навігації по маршрутах-->
+<!--Выведем блок навигации по маршрутах-->
 <div class="routes_info">
     <div class="container">
         <div class="col-md-12">
@@ -87,7 +82,7 @@ $tag = $lang->getTag();
 </div>
 
 
-<!--Маршрут і карта маршруту-->
+<!--Маршрут и карта маршрута-->
 <div class="rout">
 	<?php if ($pink) : ?>
     <div class="abt_rout" style="background-image: url(/images/route_01.jpg);">
